@@ -1,0 +1,181 @@
+<div class="mega-menu dark-blue-bg">
+    <span id="close" (click)="closeMega()">&times;</span>
+    <div class="support-blocks">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 support-block chat">
+                <h5 class="navigation-heading">Live chat</h5>
+                <div class="">Live chat allows you to use instant messaging to contact our Customer Service team via our website.</div>
+                <a href="" class="btn btn-light rounded-formcontrol chat-button mt-3" disabled="">Offline now</a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 support-block call-us">
+                <ng-container *ngIf="!callCodesError">
+                    <h5 class="navigation-heading">Call us</h5>
+                    <select class="form-control btn-block rounded-formcontrol" (change)="selectCode($event.target.value)">
+          <option *ngFor="let code of allCallCodes" [value]="code.dial_code">{{code.name}}</option>
+        </select>
+                    <i class="fas fa-phone text-white light-blue-bg mt-2"></i>
+                    <span id="phone" class="light-blue font-weight-bold">{{callCode}}</span>
+                </ng-container>
+
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 support-block call-back">
+                <h5 class="navigation-heading">Request a callback</h5>
+
+                <!--                                            <div class="callback-ok">-->
+                <!--                                                <span>Thank you! Our operators will call you shortly.</span>-->
+                <!--                                            </div>-->
+
+                <div id="callback-form" class="form callback-form full-width">
+                    <div class="form-row error-field">
+                        <input id="cbName" placeholder="Name" type="text" class="form-control validate-input error">
+                        <div class="error-message show">
+                            <div id="cbName_error" class="show">Please enter your name</div>
+                        </div>
+                    </div>
+                    <div class="form-row error-field">
+                        <div class="clearfix">
+                            <div class="row">
+                                <div class="col-3">
+                                    <input id="cbCode" data-rule="number" placeholder="+44" type="text" class=" form-control">
+                                </div>
+                                <div class="col-9">
+                                    <input id="cbPhone" data-rule="number" placeholder="15 1317 2610" type="text" class=" form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <a href="" id="callback-request" class="btn btn-block light-blue-bg text-white rounded-formcontrol chat-button mt-3" title="Should you require more information, you can request a free callback.">Receive a callback</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 support-block email">
+                <h5 class="navigation-heading">Send us an email</h5>
+                <p class="block-text">For all questions concerning future bookings and current car rentals, please write us an email in the language most convenient for you.</p>
+                <div class="support-block-email-type">
+                    <div class="support-block-email-label">New bookings &amp; Existing bookings</div>
+                    <a href="mailto:mail@gmail.com" class="support-block-email">support@gmail.com</a>
+                </div>
+                <div class="support-block-email-type">
+                    <div class="support-block-email-label">After rental</div>
+                    <a href="mailto:mail@gmail.com" class="support-block-email">support@gmail.com</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="top-nav">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-6">
+                <div class="logo">
+                    <a href="./"><img src="./assets/images/LOGO.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-6 right-nav" id="top-nav-disktop">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 contact align-items-center">
+                        <div class="btn-group show" role="group">
+                            <button class="btn btn-light rounded-formcontrol call-us light-blue font-weight-bold mb-1">
+                <i class="fas fa-phone text-white light-blue-bg"></i>
+                <span class="grey">Contact us</span>
+              </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-4 language d-flex text-center align-items-center">
+                        <img src="../../assets/css/blank.gif" [ngClass]='currentFlag' alt="United States" />
+                        <select class="btn change-language" (change)="changeLangFlag($event.target.value)">
+              <option value="us" selected> English
+                </option>
+              <option value="sa" >Arabic</option>
+            </select>
+
+                    </div>
+                    <div class="col-md-3 col-4 add-property d-flex text-center align-items-center">
+                        <button class="btn btn-light rounded-formcontrol"><i class="fas fa-plus light-blue"></i><span class="grey">Add Property</span></button>
+                    </div>
+
+                    <div class="dropdown dropleft col-md-3 col-4 account d-flex text-center align-items-center">
+                        <button type="button" class="btn btn-light rounded-formcontrol dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user light-blue"></i><span class="grey">My Account</span>
+            </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt light-blue"></i>Sign in</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt light-blue"></i>Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-6 right-nav">
+                <div class="row" id="top-nav-mobile">
+                    <div class="col-md-3 col-4 contact align-items-center">
+                        <div class="btn-group show" role="group">
+                            <button class="btn btn-light rounded-formcontrol call-us light-blue font-weight-bold mb-1">
+        <i class="fas fa-phone text-white light-blue-bg"></i>
+        <span class="grey">Contact us</span>
+      </button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown dropleft col-md-4 col-4 account d-flex text-center align-items-center">
+                        <button type="button" class="btn btn-light rounded-formcontrol dropdown-toggle" data-toggle="dropdown">
+      <i class="fas fa-user light-blue"></i><span class="grey">My Account</span>
+    </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt light-blue"></i>Sign in</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt light-blue"></i>Register</a>
+                            <a class="dropdown-item" href="#" id="add-prop-mobile"><i class="fas fa-plus light-blue"></i><span class="grey">Add Property</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-4 language d-flex text-center align-items-center">
+                        <img src="../../assets/css/blank.gif" [ngClass]='currentFlag' alt="United States" />
+                        <select class="btn change-language" (change)="changeLangFlag($event.target.value)">
+      <option value="us" selected> English
+        </option>
+      <option value="sa" >Arabic</option>
+    </select>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark dark-blue-bg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <span id="quick-access-mobile" class="dark-blue-bg quick-access">
+      <a href="#"><img src="../../assets/images/Layer%201@1X.png"></a>
+      <a href="#"><img src="../../assets/images/mountains-128@1X.png"></a>
+      <a href="#"><img src="../../assets/images/car-128@1X.png"></a>
+</span>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav mr-auto">
+                <a class="nav-item nav-link effect" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                <a class="nav-item nav-link effect " [routerLink]="['/villas']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Condos/Villas</a>
+                <a class="nav-item nav-link effect " [routerLink]="['/hotels']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Hotels</a>
+                <a class="nav-item nav-link effect " href="#">Cars</a>
+                <a class="nav-item nav-link effect " href="#">Destinations</a>
+                <a class="nav-item nav-link effect hide-mid" href="#">Company</a>
+                <a class="nav-item nav-link effect hide-mid" [routerLink]="['/fly-trips']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Fly trips</a>
+            </ul>
+            <span id="quick-access-lg" class="quick-access">
+      <a href="#"><img src="../../assets/images/Layer%201@1X.png"> </a>
+      <a href="#"><img src="../../assets/images/mountains-128@1X.png"></a>
+      <a href="#"><img src="../../assets/images/car-128@1X.png"></a>
+        </span>
+        </div>
+    </div>
+
+</nav>

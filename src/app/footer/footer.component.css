@@ -1,0 +1,127 @@
+.newsfeed {
+    position: relative;
+    margin-top: 150px;
+    height: auto;
+}
+
+.newsfeed:before {
+    content: '';
+    width: 100%;
+    height: 150px;
+    background: url("../../assets/images/cities.png");
+    position: absolute;
+    top: -120px;
+}
+
+.newsfeed .news-letter {
+    line-height: 25px;
+    color: #fff;
+}
+
+.newsfeed button {
+    color: #fff;
+}
+
+
+/*********************************         FOOTER       ****************************************/
+
+#canvas {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 741px;
+    top: -55.4%;
+}
+
+footer .links {
+    padding: 30px 30px;
+}
+
+footer .login,
+footer .copyrights {
+    padding: 20px 30px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li:before {
+    content: '';
+    /* font-size: 26px; */
+    background-color: #131448;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    transition: 0.3s ease;
+}
+
+footer ul li:hover:before {
+    background-color: #16cce1;
+}
+
+footer .social a.social-link {
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    display: block;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin: 5px;
+    transition: 0.3s all ease-in;
+}
+
+footer .social a.social-link:hover {
+    color: #0d95e8;
+    border: 2px solid #0d95e8;
+}
+
+footer .social {
+    display: inline-block;
+}
+
+footer .store {
+    display: flex;
+    margin: 10px 10px 0 0;
+}
+
+.store div a img {
+    width: 120px;
+}
+
+#payment-methods div a i {
+    font-size: 25px;
+}
+
+#company {
+    color: #0d95e8;
+}
+
+#company span a {
+    color: #0d95e8;
+}
+
+@media screen and (max-width: 768px) {
+    canvas {
+        display: none;
+    }
+}

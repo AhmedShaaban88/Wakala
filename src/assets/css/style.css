@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url(s1.css);
+.feat1 {
+  width: 100%;
+  height: 250px; }
+.feat1:before,
+.feat1:after {
+  width: 100%;
+  height: 100%; }
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  width: 30px;
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  top: 22px; }
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  left: 0;
+  right: auto; }
+  .swiper-button-next:before, .swiper-container-rtl .swiper-button-prev:before {
+    content: "";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #111548; }
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  right: 0;
+  left: auto; }
+  .swiper-button-prev:before, .swiper-container-rtl .swiper-button-next:before {
+    content: "";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #111548; }
+
+#cars .header .background {
+  height: 550px;
+  background-position: center center;
+  background-size: cover !important;
+  position: relative; }
+  #cars .header .background input {
+    margin-bottom: 5px; }
+  #cars .header .background .pickup {
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    #cars .header .background .pickup .return-location, #cars .header .background .pickup .pickup-location {
+      position: relative; }
+      #cars .header .background .pickup .return-location .btn, #cars .header .background .pickup .pickup-location .btn {
+        position: absolute;
+        right: 0;
+        top: 0; }
+  #cars .header .background .search-btn {
+    width: 200px;
+    max-width: 100%; }
+#cars .content {
+  padding: 40px 0; }
+#cars .offers {
+  margin-bottom: 60px; }
+  #cars .offers .swiper-container {
+    border: 1px solid #ddd;
+    padding: 20px 30px; }
+  #cars .offers img {
+    max-height: 50px; }
+  #cars .offers .swiper-slide {
+    height: 100%; }
+#cars .big-offers {
+  margin-bottom: 60px; }
+  #cars .big-offers .swiper-container {
+    border: 1px solid #ddd;
+    padding: 20px 30px; }
+    #cars .big-offers .swiper-container .swiper-slide {
+      height: fit-content; }
+      #cars .big-offers .swiper-container .swiper-slide img {
+        width: auto; }
+#cars .search .card {
+  margin-bottom: 10px; }
+  #cars .search .card .card-header {
+    padding: 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 0; }
+    #cars .search .card .card-header [aria-expanded="false"] {
+      background: #232571;
+      width: 100%;
+      text-align: left;
+      border-radius: 0 !important; }
+      #cars .search .card .card-header [aria-expanded="false"]:after {
+        content: "";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    #cars .search .card .card-header [aria-expanded="true"] {
+      background: #16cce1;
+      width: 100%;
+      text-align: left;
+      border-radius: 0 !important; }
+      #cars .search .card .card-header [aria-expanded="true"]:after {
+        content: "";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    #cars .search .card .card-header button {
+      color: #fff;
+      text-decoration: none; }
+  #cars .search .card .card-body {
+    border-top: none;
+    padding: 0; }
+    #cars .search .card .card-body #slider-range {
+      margin: 10px 15px; }
+    #cars .search .card .card-body ul {
+      margin-bottom: 0; }
+      #cars .search .card .card-body ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; }
+        #cars .search .card .card-body ul li .custom-control .custom-control-label:before, #cars .search .card .card-body ul li .custom-control .custom-control-label:after {
+          border-radius: 50%; }
+#cars .search .search-results .single-result.card {
+  padding: 1.25rem;
+  border-radius: 0;
+  margin-bottom: 20px; }
+  #cars .search .search-results .single-result.card .car-img {
+    display: block;
+    width: auto;
+    margin-bottom: 20px; }
+  #cars .search .search-results .single-result.card .brand {
+    padding-right: 20px;
+    display: inline-block;
+    width: 80px;
+    height: auto; }
+  #cars .search .search-results .single-result.card .features {
+    display: inline-block;
+    font-weight: bold;
+    color: #111548;
+    margin-bottom: 0; }
+    #cars .search .search-results .single-result.card .features li {
+      list-style-type: none;
+      width: 50%;
+      float: left;
+      margin: 0; }
+      #cars .search .search-results .single-result.card .features li:before {
+        content: "";
+        background-color: #16cce1;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 6px;
+        transition: 0.3s ease; }
+      #cars .search .search-results .single-result.card .features li:hover:before {
+        background-color: #131448; }
+  #cars .search .search-results .single-result.card .includes {
+    padding: 10px;
+    background-color: #e2f1f4;
+    margin-top: 20px; }
+    #cars .search .search-results .single-result.card .includes h6 {
+      font-weight: bold;
+      color: #000;
+      font-size: 18px; }
+    #cars .search .search-results .single-result.card .includes ul li {
+      color: #333;
+      width: auto;
+      margin-right: 20px;
+      font-size: 14px;
+      font-weight: bolder; }
+      #cars .search .search-results .single-result.card .includes ul li:before {
+        color: #16cce1;
+        content: "";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        width: 0;
+        margin: 0 20px 0 0; }
+#cars .search .card.information .extra-features .card-header {
+  font-size: 20px;
+  background-color: #282471;
+  color: #fff;
+  padding: 10px 0; }
+#cars .search .card.information .extra-features .card-body {
+  border: none; }
+#cars .search .booking {
+  position: relative;
+  background: #e2f1f4;
+  width: 100%;
+  height: 100%;
+  min-height: 180px; }
+  #cars .search .booking .price {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #cars .search .booking .price .aday .price-day {
+      font-weight: bold;
+      color: #000;
+      margin: 0 5px; }
+    #cars .search .booking .price .total {
+      font-size: 14px; }
+  #cars .search .booking .booking-btn {
+    background: #111548;
+    color: #fff;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    left: 0;
+    margin: 10px; }
+#cars .search .card.extra-features .card-body {
+  background-color: #ecf6f7; }
+  #cars .search .card.extra-features .card-body .single-feature {
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px; }
+    #cars .search .card.extra-features .card-body .single-feature label {
+      background: #fff;
+      width: 100%;
+      padding: 10px 0;
+      transition: 0.2s ease-out;
+      height: 250px; }
+      #cars .search .card.extra-features .card-body .single-feature label .overlay {
+        display: none; }
+    #cars .search .card.extra-features .card-body .single-feature input {
+      opacity: 0; }
+    #cars .search .card.extra-features .card-body .single-feature label:hover {
+      color: #282471;
+      cursor: pointer; }
+    #cars .search .card.extra-features .card-body .single-feature input:checked + label {
+      color: #282471;
+      border-color: #3bc4cc; }
+      #cars .search .card.extra-features .card-body .single-feature input:checked + label .overlay {
+        display: block;
+        background-color: rgba(59, 169, 204, 0.6);
+        position: absolute;
+        top: 18px;
+        bottom: 2px;
+        right: 10px;
+        left: 10px;
+        transition: 0.2s ease-out; }
+        #cars .search .card.extra-features .card-body .single-feature input:checked + label .overlay i {
+          color: #fff;
+          font-size: 60px;
+          top: 50%;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+    #cars .search .card.extra-features .card-body .single-feature img {
+      margin-bottom: 20px;
+      max-height: 200px;
+      min-height: 100px; }
+#cars .search .submit-btn {
+  display: block;
+  width: fit-content;
+  padding: 15px 20px 5px;
+  margin: 40px auto 20px;
+  color: #fff;
+  border-radius: 100px; }
+#cars .search .card.flight-data {
+  background-color: #ecf6f7;
+  margin-top: 30px; }
+  #cars .search .card.flight-data .form-control {
+    padding: 0.75rem 1.25rem;
+    border-radius: 100px; }
+#cars .search .card.driver-data {
+  background-color: #ecf6f7;
+  margin-top: 30px; }
+  #cars .search .card.driver-data .form-control {
+    padding: 0.75rem 1.25rem;
+    border-radius: 100px; }
+
+/*# sourceMappingURL=style.css.map */

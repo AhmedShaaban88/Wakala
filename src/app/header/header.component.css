@@ -1,0 +1,212 @@
+/*     bootstrap override     */
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.right-nav,
+.contact,
+.call-us,
+.contact>.btn-group {
+    position: static;
+}
+
+
+/*   start style   */
+
+#top-nav {
+    height: auto;
+    padding: 20px 0;
+}
+
+#top-nav .logo img {
+    height: 100%;
+}
+
+#top-nav .change-country {
+    max-width: 150px;
+}
+
+.contact {
+    text-align: center;
+}
+
+#top-nav .contact i,
+#top-nav .add-property i {
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#top-nav .contact i {
+    font-size: 14px;
+    padding: 7px;
+}
+
+#top-nav span {
+    font-size: 14px;
+}
+
+#top-nav .account i {
+    margin-right: 6px;
+}
+
+#top-nav-mobile {
+    display: none;
+}
+
+.change-language {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+.change-language:focus {
+    box-shadow: 0 0;
+}
+
+.mega-menu {
+    display: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #Fff;
+    border-bottom: 1px solid #e8eaed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.mega-menu .support-block {
+    padding: 20px;
+}
+
+.mega-menu .call-us i {
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#close {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.chat-button {
+    color: white;
+}
+
+
+/*********************************         MAIN NAV       ****************************************/
+
+nav.navbar {
+    padding-bottom: 0;
+}
+
+nav a {
+    transition: all .3s ease;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #eee;
+}
+
+nav .nav-item:hover {
+    color: #16cce1;
+    border-bottom: 5px solid #16cce1;
+}
+
+nav .active {
+    border-bottom: 5px solid #16cce1;
+    color: #16cce1;
+}
+
+nav .nav-item {
+    margin: 0 10px;
+}
+
+#quick-access-mobile {
+    display: none;
+}
+
+.quick-access a img {
+    border-left: 1px solid #585858;
+    margin: 0 10px;
+    padding-left: 8px;
+}
+
+.quick-access {
+    padding: 15px 0;
+}
+
+
+/*********************************         MAIN NAV  END      ****************************************/
+
+@media (max-width: 767px) {
+    nav.navbar-nav .nav-link {
+        padding-left: 15px!important;
+    }
+    nav .nav-item:hover {
+        border-left: 5px solid #16cce1;
+        border-bottom: none;
+        padding-left: 15px!important;
+    }
+    nav .active {
+        border-left: 5px solid #16cce1;
+        border-bottom: none;
+        padding-left: 15px!important;
+    }
+}
+
+@media screen and (max-width: 1110px) and (min-width: 992px) {
+    .language {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 905px) and (min-width: 768px) {
+    .navbar button {
+        display: block;
+    }
+    .navbar-nav {
+        visibility: hidden;
+    }
+    .hide-mid {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #quick-access-lg {
+        display: none;
+    }
+    #quick-access-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #top-nav-mobile {
+        display: flex;
+    }
+    #top-nav-disktop {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #top-nav-mobile .col-4 img {
+        display: none;
+    }
+}

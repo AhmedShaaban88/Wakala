@@ -1,0 +1,247 @@
+#airplane-container {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#flying-airplane {
+    background: url('../../../assets/images/flight1320x742@1X.png') no-repeat center center;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+.tabs-container {
+    position: absolute;
+    right: 7%;
+    top: 10%;
+}
+
+.tabs-container .container .row {
+    flex-direction: row-reverse;
+}
+
+.tabs {
+    background-color: white;
+    padding: 15px;
+}
+
+.custom-select {
+    direction: rtl;
+}
+
+.font-weight-bold {
+    color: black;
+}
+
+.tab-content .tab-pane * {
+    transition: .3s;
+}
+
+.tabs .tab-pane {
+    margin: 20px 0;
+}
+
+.tabs a {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tabs li {
+    background-color: transparent;
+    margin: 2px;
+    text-align: center;
+    line-height: 50px;
+    width: fit-content;
+    min-width: 90px;
+}
+
+.tabs li {
+    cursor: pointer;
+}
+
+.tabs li.active a {
+    color: #16cce1;
+}
+
+.form-control {
+    height: auto;
+}
+
+.input-group-text {
+    background-color: #282471;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    width: 110px;
+    font-weight: bold;
+}
+
+input,
+select {
+    height: auto;
+    background-color: #e5e5e5;
+}
+
+.input-location button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 50%;
+    color: #282471;
+    z-index: 2;
+    font-size: 18px;
+    padding: 3px 10px;
+}
+
+button[type="submit"] {
+    width: 110px;
+    height: 40px;
+    margin: 10px 5px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #16cce1;
+    color: white;
+}
+
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.collapse-toggler {
+    background-color: #16cce1 !important;
+    color: black;
+    border-radius: 0;
+    margin-bottom: 4px;
+    border: 1px solid #16cce1;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 22px;
+}
+
+.collapse-toggler:focus {
+    box-shadow: 0 0;
+}
+
+.collapse-toggler .fa-angle-down {
+    display: block;
+    float: right;
+}
+
+.list-group-item {
+    background-color: #e4f1f2!important;
+    padding: 20px 20px;
+    border-radius: 0;
+}
+
+#trip-container .trip-item {
+    border: 1px solid #dedede;
+    padding: 15px 35px;
+}
+
+.trip-item:not(:first-child) {
+    margin-top: 20px;
+}
+
+.trip-item figure img {
+    width: 100%;
+}
+
+p .col-md-6 {
+    font-size: 1.3rem;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 27px;
+    position: relative;
+}
+
+.arrow:before {
+    content: "1";
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    font-size: 15px;
+}
+
+.trip-time {
+    color: rgba(33, 37, 41, 0.8)
+}
+
+.cost {
+    padding-top: 45px;
+    position: relative;
+}
+
+.cost .cost-border {
+    border-left: 1px solid #dedede;
+    position: absolute;
+    height: 100px;
+    top: 30px;
+    left: -5px;
+}
+
+.cost .dollars {
+    font-size: 40px!important;
+}
+
+.cost .dollars .cents {
+    font-size: 15px!important;
+    vertical-align: super;
+}
+
+@media screen and (max-width: 1145px) and (min-width: 1036px) {
+    p .col-md-6 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1035px) and (min-width: 993px) {
+    p .col-md-6 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    p .col-md-6 {
+        font-size: 1rem;
+    }
+    .trip-item {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #airplane-container {
+        padding-right: 0;
+    }
+    .tabs-container {
+        left: 0;
+        right: 0;
+    }
+    button[type="submit"] {
+        width: 100%;
+    }
+    #trip-container {
+        padding: 10px;
+    }
+    .trip-item .col-md-3 {
+        width: 50%;
+        margin: auto;
+    }
+    #trip-container .col-sm-12 {
+        text-align: center;
+    }
+    .cost .cost-border {
+        display: none;
+    }
+}  

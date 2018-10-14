@@ -1,0 +1,981 @@
+<!--------------------        CAROUSEL START         ----------------------->
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../../assets/images/slider-img-1.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./../assets/images/slider-img-1.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./../assets/images/slider-img-1.png" alt="Third slide">
+        </div>
+    </div>
+
+    <!--        carousel end-->
+
+    <div class="tabs-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="tabs">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li (click)="activeTab(0)">
+                                <a href="#tab_a" data-toggle="pill">
+                                    <i class="fa fa-plane fa-2x"></i>
+                                    <h6>Flights</h6>
+                                </a>
+                            </li>
+                            <li (click)="activeTab(1)">
+                                <a href="#tab_b" data-toggle="pill">
+                                    <i class="fa fa-home fa-2x"></i>
+                                    <h6>Hotels</h6>
+                                </a>
+                            </li>
+                            <li (click)="activeTab(2)">
+                                <a href="#tab_c" data-toggle="pill">
+                                    <i class="fa fa-car fa-2x"></i>
+                                    <h6>Bundle and Save</h6>
+                                </a>
+                            </li>
+                            <li (click)="activeTab(3)">
+                                <a href="#tab_d" data-toggle="pill">
+                                    <i class="fa fa-home fa-2x"></i>
+                                    <h6>Vacation rentals</h6>
+                                </a>
+                            </li>
+                            <li class="active" (click)="activeTab(4)">
+                                <a href="#tab_e" data-toggle="pill">
+                                    <i class="fa fa-car fa-2x"></i>
+                                    <h6>Cars</h6>
+                                </a>
+                            </li>
+                            <li (click)="activeTab(5)">
+                                <a href="#tab_f" data-toggle="pill">
+                                    <i class="fas fa-cloud fa-2x"></i>
+                                    <h6>Destinations</h6>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="tab_a">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapFlights"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_b">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapHotels"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_c">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapBund"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_d">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapVac"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="tab_e">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapCars"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input id="location" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="terms">
+                                            <input type="checkbox"> Return the car to the same location as it is received
+                                            <br>
+                                            <input type="checkbox"> Do the driver's age between 30-65 ?
+                                        </div>
+                                        <div><button type="submit" class="btn dark-blue-bg text-white">Submit</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_f">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3 input-location">
+                                            <button class="btn" data-toggle="modal" data-target="#mapDest"><i class="fas fa-map-marker-alt"></i></button>
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>pickup date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt mr-2"></i>return date</span>
+                                            </div>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text"><i class="far fa-clock mr-2"></i>pickup time</span>
+                                            </div>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<!--------------------        CAROUSEL END         ----------------------->
+
+<!--------------------        TRAVEL DESTINATIONS START         ----------------------->
+<section class="destinations">
+    <div class="container">
+        <h6 class="m-2 section-title">Popular Travel Destinations</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/london.png" alt=""></a>
+                    <div class="details">
+                        <div class="city-name">London</div>
+                        <p class="price">100$</p>
+                    </div>
+                </div>
+                <div class="city">
+                    <a href=""><img src="../../assets/images/london.png" alt=""></a>
+                    <div class="details">
+                        <div class="city-name">London</div>
+                        <p class="price">100$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/london.png" alt=""></a>
+                    <div class="details">
+                        <div class="city-name">London</div>
+                        <p class="price">100$</p>
+                    </div>
+                </div>
+                <div class="city">
+                    <a href=""><img src="../../assets/images/london.png" alt=""></a>
+                    <div class="details">
+                        <div class="city-name">London</div>
+                        <p class="price">100$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="city main-city">
+                    <a class="thumbnail fancybox" rel="ligthbox" href="../../assets/images/london.png">
+                        <img class="img-fluid mb-2" alt="" src="../../assets/images/london.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------        TRAVEL DESTINATIONS END         ----------------------->
+
+
+<!--------------------        top destinations START         ----------------------->
+<section class="top-destinations">
+    <div class="container">
+        <h6 class="mb-4 section-title">Flights to top destinations
+            <a href="" class="more">MORE</a>
+        </h6>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <p class="details">
+                        <span class="city">Dubai</span>
+                        <p class="cost text-right">
+                            from
+                            <span>100</span>
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <p class="details">
+                        <span class="city">Dubai</span>
+                        <p class="cost text-right">
+                            from
+                            <span>100</span>
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <p class="details">
+                        <span class="city">Dubai</span>
+                        <p class="cost text-right">
+                            from
+                            <span>100</span>
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <p class="details">
+                        <span class="city">Dubai</span>
+                        <p class="cost text-right">
+                            from
+                            <span>100</span>
+                        </p>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+
+        </div>
+    </div>
+</section>
+<!--------------------        top destinations END         ----------------------->
+
+
+<!--------------------        Apartments START         ----------------------->
+<section class="apartments">
+    <div class="container">
+        <h6 class="mb-4">More than just hotels ... discover pure comfort with home & apartments</h6>
+        <div class="row">
+
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Argentina apartment</h6>
+                        <p class="city">Dubai</p>
+                        <p class="cost dark-blue">100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Argentina apartment</h6>
+                        <p class="city">Dubai</p>
+                        <p class="cost dark-blue">100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Argentina apartment</h6>
+                        <p class="city">Dubai</p>
+                        <p class="cost dark-blue">100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/dubai.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Argentina apartment</h6>
+                        <p class="city">Dubai</p>
+                        <p class="cost dark-blue">100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</section>
+<!--------------------        Apartments END         ----------------------->
+
+
+<!--------------------        Apartments START         ----------------------->
+<section class="accommodations">
+    <div class="container">
+        <h6 class="mb-4">Whatever accommodations you are looking for we have got them</h6>
+        <div class="row">
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="city">
+                    <a href=""><img src="../../assets/images/hotel.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">apartments</h6>
+                        <a href="" class="light-blue number font-weight-bold">12258</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</section>
+<!--------------------        Apartments END         ----------------------->
+
+
+<!--------------------        Apartments START         ----------------------->
+<section class="cars-rent">
+    <div class="container">
+        <h6 class="mb-4">Cars Rent</h6>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <div class="item">
+                    <a href=""><img src="../../assets/images/car.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Egypt</h6>
+                        <span class="light-blue cost font-weight-bold">200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="item">
+                    <a href=""><img src="../../assets/images/car.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Egypt</h6>
+                        <span class="light-blue cost font-weight-bold">200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="item">
+                    <a href=""><img src="../../assets/images/car.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Egypt</h6>
+                        <span class="light-blue cost font-weight-bold">200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="item">
+                    <a href=""><img src="../../assets/images/car.png" alt=""></a>
+                    <div class="details">
+                        <h6 class="title">Egypt</h6>
+                        <span class="light-blue cost font-weight-bold">200</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</section>
+<!--------------------        Apartments END         ----------------------->
+<section>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <!--------------------        holiday offers  START         ----------------------->
+                <section class="holiday-offers">
+                    <div class="container">
+                        <h6 class="mb-4 section-title">Explore more holiday offers around the world
+                            <a href="" class="more">MORE</a></h6>
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href=""><img src="../../assets/images/golden-hotel.png" alt=""></a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <h6 class="title mt-2"><a href="">GOLDEN HOTEL</a> <span class="location">France</span></h6>
+                                            <h6 class="rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h6>
+                                            <p class="cost"> <span class="no-of-nights">3</span> <span class="price">200</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+
+
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href=""><img src="../../assets/images/golden-hotel.png" alt=""></a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <h6 class="title mt-2"><a href="">GOLDEN HOTEL</a> <span class="location">France</span></h6>
+                                            <h6 class="rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h6>
+                                            <p class="cost"> <span class="no-of-nights">3</span> <span class="price">200</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href=""><img src="../../assets/images/golden-hotel.png" alt=""></a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <h6 class="title mt-2"><a href="">GOLDEN HOTEL</a> <span class="location">France</span></h6>
+                                            <h6 class="rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </h6>
+                                            <p class="cost"> <span class="no-of-nights">3</span> <span class="price">200</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </section>
+                <!--------------------        holiday offers  END         ----------------------->
+
+
+            </div>
+
+            <div class="col-md-6">
+                <!--------------------        Things to do  START         ----------------------->
+                <section class="things-to-do">
+                    <div class="container">
+                        <h6 class="mb-4 section-title">Things to do in top destinations<a href="" class="more">MORE</a></h6>
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="">
+                                            <img src="../../assets/images/top-destintaions.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <a href="" class="title mt-2">
+                                                <h6 class="">GOLDEN HOTEL</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="">
+                                            <img src="../../assets/images/top-destintaions.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <a href="" class="title mt-2">
+                                                <h6 class="">GOLDEN HOTEL</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+
+                        <div class="row">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <a href="">
+                                            <img src="../../assets/images/top-destintaions.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="details">
+                                            <a href="" class="title mt-2">
+                                                <h6 class="">GOLDEN HOTEL</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </section>
+                <!--------------------        Things to do  END         ----------------------->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------        advantages  START         ----------------------->
+<section class="advantages">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../../assets/images/time.png" alt="">
+                    </div>
+                    <div class="col-9 details">
+                        <h5>Easy & Fast Booking</h5>
+                        <p>search, compare &book</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../../assets/images/SHIELD.png" alt="">
+                    </div>
+                    <div class="col-9 details">
+                        <h5>Secure payment</h5>
+                        <p>Secure payment options</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../../assets/images/help.png" alt="">
+                    </div>
+                    <div class="col-9 details">
+                        <h5>24/7 Customer Support</h5>
+                        <p>customer support around clock</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------        advantages  END         ----------------------->
+
+<!----- google map ---------------------------------------------------------------------------->
+<div class="modal fade" id='mapFlights' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id='mapHotels' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id='mapBund' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id='mapVac' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id='mapCars' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title" id="mapModalLabel">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body" id="get-location">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id='mapDest' tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" style="height: 500px;">
+            <div class="modal-header text-center">
+                <h5 class="modal-title">Choose Location from the map</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+            </div>
+            <div class="modal-body">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" (mapClick)="mapInfo($event)">
+                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="mapInfo($event)">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

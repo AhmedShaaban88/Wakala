@@ -1,0 +1,826 @@
+/*********************************         TABS START      ****************************************/
+
+.carousel {
+    width: 100%;
+    height: 600px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.carousel .carousel-item img {
+    height: 100%;
+}
+
+.tabs-container {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+}
+
+.tabs {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.tab-content .tab-pane * {
+    transition: .3s;
+}
+
+.tabs .tab-pane {
+    margin: 20px 0;
+}
+
+.tabs h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.tabs p {
+    font-size: 14px;
+}
+
+.tabs a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs li {
+    background-color: #282471;
+    margin: 2px;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 50px;
+    height: 90px;
+    width: fit-content;
+    min-width: 90px;
+}
+
+.tabs li {
+    cursor: pointer;
+}
+
+.tabs li.active {
+    background-color: #16cce1;
+}
+
+.form-control {
+    height: auto;
+}
+
+.input-group-text {
+    background-color: #282471;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+}
+
+.input-location button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 50%;
+    color: #282471;
+    z-index: 2;
+    font-size: 18px;
+    padding: 3px 10px;
+}
+
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+/*********************************         TABS END      ****************************************/
+
+
+/*********************************         destinations start      ****************************************/
+
+section {
+    padding: 40px 0;
+}
+
+section .section-title {
+    font-weight: bold;
+    position: relative;
+}
+
+.destinations .city {
+    position: relative;
+    margin-top: 20px;
+}
+
+.destinations .main-city {
+    height: 270px;
+}
+
+.destinations .city img {
+    width: 100%;
+    height: 135px;
+}
+
+.destinations .main-city img {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.destinations .city .details {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.destinations .city .city-name {
+    color: #fff;
+    background-color: #282471;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.destinations .city .price {
+    color: #fff;
+}
+
+.destinations .city .price:before {
+    content: 'Prices start from';
+    display: block;
+    ;
+}
+
+
+/*********************************         destinations end      ****************************************/
+
+
+/*********************************         top-destinations start      ****************************************/
+
+.top-destinations .section-title .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+.top-destinations img {
+    width: 100%;
+    height: 170px;
+}
+
+.top-destinations .details {
+    float: left;
+    font-weight: bold;
+}
+
+.top-destinations .cost {
+    float: right;
+    display: inline;
+    font-weight: bold;
+}
+
+.top-destinations .cost span:before {
+    content: '$';
+}
+
+
+/*********************************         top-destinations end      ****************************************/
+
+
+/*********************************         apartments start      ****************************************/
+
+.apartments .city img {
+    width: 100%;
+    height: 135px;
+}
+
+.apartments .city .details * {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.apartments .city .details .city {
+    font-weight: normal;
+}
+
+.apartments .city .details .cost:before {
+    content: 'From ';
+}
+
+.apartments .city .details .cost:after {
+    content: '$';
+    font-weight: bold;
+}
+
+
+/*********************************         apartments end      ****************************************/
+
+
+/*********************************         accommodations  start      ****************************************/
+
+.accommodations {}
+
+.accommodations .city img {
+    width: 100%;
+    height: 135px;
+}
+
+.accommodations .details .number {
+    text-decoration: none;
+}
+
+.accommodations .details .number:after {
+    content: 'Apartment';
+    margin-left: 5px;
+}
+
+
+/*********************************         accommodations  end      ****************************************/
+
+
+/*********************************         Cars Rent  start      ****************************************/
+
+.cars-rent .item img {
+    width: 100%;
+    height: 135px;
+}
+
+.cars-rent .item {
+    background-color: #eee;
+}
+
+.cars-rent .item .details {
+    position: relative;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.cars-rent .item .details .title {
+    display: inline;
+}
+
+.cars-rent .item .details .cost {
+    position: absolute;
+    right: 10px;
+}
+
+
+/*********************************         Cars Rent  end      ****************************************/
+
+
+/*********************************         holiday offers start      ****************************************/
+
+.holiday-offers .section-title .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+.holiday-offers .item img {
+    width: 100%;
+    height: 140px;
+}
+
+.holiday-offers .item {
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.holiday-offers .item .details {
+    position: relative;
+    line-height: 40px;
+    padding: 10px 10px 0 0;
+}
+
+.holiday-offers .item .rate {
+    color: #eae130;
+    font-size: 14px;
+}
+
+.holiday-offers .item .details .title a {
+    text-decoration: none;
+}
+
+.holiday-offers .item .details .title .location {
+    float: right;
+    font-size: 12px;
+}
+
+.holiday-offers .item .details .cost {
+    font-weight: bold;
+}
+
+.holiday-offers .item .details .no-of-nights:after {
+    content: 'nights/';
+    margin-left: 5px;
+}
+
+.holiday-offers .item .details .price:after {
+    content: '$';
+    margin-left: 5px;
+}
+
+
+/*********************************         holiday offers end      ****************************************/
+
+
+/*********************************         Things to do start      ****************************************/
+
+.things-to-do .section-title .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+.things-to-do .item img {
+    width: 100%;
+    height: 140px;
+}
+
+.things-to-do .item {
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.things-to-do .item .details .title {
+    text-decoration: none;
+}
+
+.things-to-do .item .details .title h6 {
+    padding: 15px 0
+}
+
+
+/*********************************         Things to do end      ****************************************/
+
+
+/*********************************         advantages start      ****************************************/
+
+.advantages .details {
+    padding-top: 15px;
+}
+
+.advantages .detail h5 {
+    font-weight: bold;
+}
+
+
+/*********************************         advantages end      ****************************************/
+
+
+/*********************************         newsfeed end      ****************************************/
+
+.newsfeed {
+    position: relative;
+    margin-top: 150px;
+    height: auto;
+}
+
+.newsfeed:before {
+    content: '';
+    width: 100%;
+    height: 150px;
+    background: url("../../assets/images/cities.png");
+    position: absolute;
+    top: -120px;
+}
+
+.newsfeed .news-letter {
+    line-height: 25px;
+    color: #fff;
+}
+
+.newsfeed button {
+    color: #fff;
+}
+
+
+/*********************************         newsfeed end      ****************************************/
+
+
+/*********************************         Region page start      ****************************************/
+
+#region {}
+
+#region .background {
+    background-size: cover!important;
+}
+
+#region .overlay {
+    background: rgba(40, 36, 113, 0.6);
+}
+
+#region .header .text h1 {
+    color: #fff;
+}
+
+#region .content {
+    margin: 40px 0;
+}
+
+#region .countries .country {
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center top!important;
+    height: 300px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#region .countries .country .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#region .countries .country:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#region .countries .country .overlay .country-name {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*********************************         Region page end      ****************************************/
+
+
+/*********************************         destination page start      ****************************************/
+
+#destinations .destination-cover {
+    height: 400px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+}
+
+#destinations .content {
+    margin: 40px 0;
+}
+
+.main-header {
+    color: #282828;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sub-header {
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#destinations .regions .region {
+    background-color: #eee;
+}
+
+#destinations .regions .region .region-img {
+    height: 300px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    position: relative;
+}
+
+#destinations .regions .region .region-img .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#destinations .regions .region .region-img:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#destinations .regions .region .region-name h5 {
+    text-align: center;
+    color: #333;
+    padding: 15px;
+}
+
+#destinations .destinations .destination {
+    margin-bottom: 20px;
+}
+
+#destinations .destinations .destination .destination-img {
+    height: 300px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    position: relative;
+}
+
+#destinations .destinations .destination .destination-img .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#destinations .destinations .destination .destination-img:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#destinations .destinations .destination .details {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#destinations .destinations .destination .destination-name {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+/* gallery */
+
+.gallery .gallery-header {
+    margin: 40px auto 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/*   Swiper slider   */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.swiper-slide a,
+.swiper-slide a img {
+    height: 200px;
+}
+
+.gallery .swiper-slide.video:after {
+    background: url("../../assets/images/video.png");
+}
+
+.gallery .swiper-slide.image:after {
+    background: url("../../assets/images/picture.png");
+}
+
+.gallery .swiper-slide.video:after,
+.gallery .swiper-slide.image:after {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    right: 5px;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 99999999999;
+    display: block;
+    transition: 0.3s;
+}
+
+.gallery .swiper-slide.video:hover:after,
+.gallery .swiper-slide.image:hover:after {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*********************************         destination page end      ****************************************/
+
+
+/*********************************         city page start      ****************************************/
+
+#city .city-cover {
+    height: 500px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center bottom!important;
+}
+
+#city .tabs-wrapper {
+    background: #eee;
+    padding-top: 5px;
+}
+
+#city .content .nav-pills .nav-link.active,
+#city .content .nav-pills .show>.nav-link {
+    color: #16cce1;
+    font-weight: bold;
+    border-bottom: 3px solid #16cce1;
+    background: none;
+    border-radius: 0;
+}
+
+#city .content .nav-pills a {
+    color: #16cce1;
+    margin: 0 10px;
+}
+
+#city .content .tabs-contents {
+    margin-top: 40px;
+}
+
+#city .content .tabs-contents .main-header,
+#city .content .tabs-contents .sub-header {
+    text-align: center;
+}
+
+#city .cities .city .city-img {
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center top!important;
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#city .cities .city .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#city .cities .city:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#city .cities .city .city-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#city .articles .card {
+    border-radius: 0;
+    height: 145px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#city .articles .card-body {
+    padding: 5px;
+}
+
+#city .articles .card img {
+    float: left;
+    height: 100%;
+    margin-right: 5px;
+}
+
+#city .articles .card-body h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #282828;
+}
+
+#city .articles .card-body p {
+    font-size: 12px;
+    color: #888;
+}
+
+
+/*********************************         city page end      ****************************************/
+
+@media (min-width: 992px) {
+    .tabs li {
+        background-color: #282471;
+        margin: 2px;
+        padding: 5px 7px;
+        text-align: center;
+        line-height: 50px;
+        height: 80px;
+        width: fit-content;
+        min-width: 80px;
+    }
+    .tabs-container {
+        position: absolute;
+        left: 5%;
+        top: 8%;
+    }
+    .tabs {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        margin: -30px 0;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .carousel {
+        height: auto;
+    }
+    .tabs {
+        padding: 0;
+        margin: 0;
+    }
+    .tabs-container {
+        left: 1%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs li {
+        background-color: #282471;
+        margin: 2px;
+        padding: 5px 10px;
+        text-align: center;
+        line-height: 25px;
+        height: 60px;
+        width: fit-content;
+        min-width: 60px;
+    }
+    .tabs {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5px;
+        margin: 0;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-inner,
+    .carousel-item {
+        height: 100%;
+    }
+    .tabs-container {
+        position: absolute;
+        left: 0%;
+        top: 2%;
+    }
+}
+
+agm-map {
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .accommodations .details .number {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tabs li {
+        height: 40px;
+    }
+    .tabs li h6 {
+        display: none;
+    }
+    .input-group {
+        margin-bottom: 0px !important;
+    }
+    .more {
+        top: 17px !important;
+    }
+}

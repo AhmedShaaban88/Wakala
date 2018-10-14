@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'CoconNext';
+    src: url('assets/fonts/coconnextarabic-light.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+body {
+    font-family: 'CoconNext', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* scroll bar edit start*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.8);
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(40, 36, 113, 0.6);
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(40, 36, 113, 0.8);
+}
+
+
+/* scroll bar edit end*/
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*     general rules       */
+
+.light-blue {
+    color: #16cce1;
+}
+
+.light-blue-bg {
+    background-color: #16cce1;
+}
+
+.light-blue-border {
+    border: 5px solid #16cce1;
+}
+
+.dark-blue {
+    color: #282471;
+}
+
+.dark-blue-bg {
+    background-color: #282471;
+}
+
+.dark-blue-border {
+    border: 2px solid #282471;
+}
+
+.v-dark-blue {
+    color: #111548;
+}
+
+.v-dark-blue-bg {
+    background-color: #111548;
+}
+
+.v-dark-blue-border {
+    border: 2px solid #111548;
+}
+
+.grey {
+    color: #5d5d5d
+}
+
+.grey-bg {
+    background-color: #5d5d5d
+}
+
+.btn-light {
+    background-color: transparent;
+}
+
+.btn-light:hover {
+    background-color: transparent;
+}
+
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show>.btn-light.dropdown-toggle {
+    background-color: transparent;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.rounded-formcontrol {
+    border-radius: 1.25rem!important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1050px;
+    }
+}

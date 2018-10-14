@@ -1,0 +1,370 @@
+#hotel-select {
+    background-color: #e2f1f4;
+    height: 138px;
+    padding: 0 150px !important;
+}
+
+#hotel-select .form-control {
+    border-radius: 0;
+}
+
+#hotel-select form .row {
+    margin-top: 30px;
+}
+
+.input-group,
+.input-group label {
+    display: block;
+}
+
+#hotel-select #select-hotel-word {
+    margin-top: 30px;
+    font-size: 19px;
+    padding: 0;
+    font-weight: 700;
+}
+
+#hotel-select .col-lg-3 #city_ {
+    width: 100%;
+}
+
+#hotel-select .col-lg-3 .not-city {
+    width: 46%;
+}
+
+.row .no-label {
+    margin-left: 10px;
+}
+
+form .search-btn {
+    border-color: #282871;
+    background-color: #282871;
+    color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin-top: 22px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+main {
+    margin-top: 5%;
+}
+
+.collapse-toggler {
+    background-color: #16cce1 !important;
+    color: black;
+    border-radius: 0;
+    margin-bottom: 4px;
+    border: 1px solid #16cce1;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 22px;
+}
+
+.collapse-toggler:focus {
+    box-shadow: 0 0;
+}
+
+.collapse-toggler .fa-angle-down {
+    display: block;
+    float: right;
+}
+
+.list-group-item {
+    background-color: #e4f1f2!important;
+    padding: 20px 20px;
+    border-radius: 0;
+}
+
+#searchFound a {
+    color: #535288;
+}
+
+#callUs {
+    background-color: #16cce1;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.3s linear;
+}
+
+#callUs:hover img {
+    transform: scale(1.2) rotate(100deg);
+}
+
+#callUs img {
+    width: 60px;
+}
+
+#callUs p {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#callUs a {
+    color: white;
+}
+
+#room-img {
+    background: url("../../../assets/images/Hotel_city_habitacion_matrimonio_03@1X.png")no-repeat center center;
+    background-size: cover;
+    height: 260px;
+    position: relative;
+}
+
+#room-name {
+    position: absolute;
+    right: 0px;
+    background-color: #16cce1;
+    bottom: 0;
+    height: 60px;
+    width: 87%;
+    text-align: right;
+    color: #202671;
+    font-size: 21px;
+    padding: 8px;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#ads {
+    background-color: #e2f1f4;
+    height: 90px;
+}
+
+#ads img {
+    width: 150px;
+    margin-top: 2%;
+    transition: margin-left 1s linear;
+}
+
+#ads button {
+    float: right;
+    background-color: #282871;
+    color: white;
+    margin-top: 4%;
+    width: 100px;
+}
+
+#villa-container {
+    margin-top: 5%;
+}
+
+.villa-item {
+    padding-right: 15px;
+    margin-bottom: 2%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#villa-container .villa-item {
+    border: 1px solid #eeeeee;
+}
+
+#villa-container .villa-item a {
+    font-size: 19px;
+    color: #232571;
+    display: inline-block;
+    padding-top: 2%;
+}
+
+.villa-item .checked {
+    color: #dfbe1c;
+}
+
+.villa-item .stars-rank {
+    float: right;
+    margin-top: 1%;
+    margin-right: 26%;
+}
+
+.fa-star {
+    transition: all 0.6s ease-in-out;
+}
+
+.villa-item img {
+    width: 30%;
+    margin-top: 2%;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: .75rem 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb .active {
+    color: black;
+}
+
+.booking {
+    background-color: #e2f1f4;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.booking button {
+    margin-top: 20%;
+    color: white;
+    width: 107px;
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.booking p {
+    margin-top: 60%;
+    font-size: 15px;
+}
+
+.booking span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.booking b {
+    color: #232571;
+}
+
+.condos-bg {
+    background-color: #232571;
+    width: 100% !important;
+    height: 46px;
+    margin-top: 20%!important
+}
+
+.move-car.sn-viewport--out {
+    margin-left: 10%;
+}
+
+.move-car.sn-viewport--in {
+    margin-left: 20%;
+}
+
+.fa-star.sn-viewport--out {
+    transform: scale(1.2);
+    color: black;
+    opacity: 0;
+}
+
+.fa-star.sn-viewport--in {
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1092px) and (min-width: 993px) {
+    #hotel-select #select-hotel-word {
+        font-size: 16px;
+    }
+    .not-city {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #callUs {
+        font-size: 17px;
+    }
+    #callUs p {
+        font-size: 19px;
+    }
+    #callUs span {
+        font-size: 14px;
+    }
+    #room-name {
+        font-size: 19px;
+    }
+    .condos-bg {
+        margin-top: 0!important;
+    }
+    .stars-rank {
+        margin-right: 15%!important;
+    }
+    #hotel-select {
+        height: auto;
+    }
+    #hotel-select form .row {
+        margin-top: 0;
+    }
+    #select-hotel-word {
+        text-align: center;
+    }
+    #hotel-select .col-lg-3 .not-city {
+        width: 50%;
+    }
+    .row .no-label {
+        margin-left: 0!important;
+    }
+    #hotel-select .col-lg-1 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .input-group {
+        width: 100% !important;
+    }
+    #hotel-select {
+        height: auto;
+        padding-right: 15px!important;
+        padding-left: 15px!important;
+    }
+    #hotel-select form .row {
+        margin-top: 0;
+    }
+    #select-hotel-word {
+        text-align: center;
+    }
+    #hotel-select .col-lg-3 .not-city {
+        width: 100%;
+    }
+    #hotel-select .col-lg-1 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .row .no-label {
+        margin-left: 0!important;
+    }
+    #searchFound p {
+        text-align: center;
+    }
+    .villa-item .col-md-3 {
+        width: 50%;
+        margin: auto;
+    }
+    .villa-item img {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    .condos-bg {
+        margin-top: 0!important;
+    }
+    .booking p {
+        margin-top: 5%;
+    }
+    .stars-rank {
+        display: block;
+        text-align: center;
+        float: none !important;
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+}
