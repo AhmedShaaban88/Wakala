@@ -24,8 +24,8 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/fancybox/dist/css/jquery.fancybox.css",
               "node_modules/jquery-ui-dist/jquery-ui.css",
+              "node_modules/swiper/dist/css/swiper.min.css",
               "src/styles.css"
 
             ],
@@ -34,7 +34,7 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery-ui-dist/jquery-ui.js",
-              "node_modules/fancybox/dist/js/jquery.fancybox.js"
+              "node_modules/swiper/dist/js/swiper.min.js"
             ]
           },
           "configurations": {

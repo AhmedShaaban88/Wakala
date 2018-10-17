@@ -164,10 +164,10 @@
             <ul class="navbar-nav mr-auto">
                 <a class="nav-item nav-link effect" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
                 <a class="nav-item nav-link effect " [routerLink]="['/villas']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Condos/Villas</a>
-                <a class="nav-item nav-link effect " [routerLink]="['/hotels']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Hotels</a>
-                <a class="nav-item nav-link effect " href="#">Cars</a>
+                <a class="nav-item nav-link effect " [routerLink]="['/hotels']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Hotels</a>
+                <a class="nav-item nav-link effect " [routerLink]="['/cars']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Cars</a>
                 <a class="nav-item nav-link effect " href="#">Destinations</a>
-                <a class="nav-item nav-link effect hide-mid" href="#">Company</a>
+                <a class="nav-item nav-link effect hide-mid" [routerLink]="['/company/all-offers']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Company</a>
                 <a class="nav-item nav-link effect hide-mid" [routerLink]="['/fly-trips']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">Fly trips</a>
             </ul>
             <span id="quick-access-lg" class="quick-access">

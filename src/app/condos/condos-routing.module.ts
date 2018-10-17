@@ -15,7 +15,7 @@ const routes: Routes = [
 
       },
       {
-        path: 'villas/details/:name',
+        path: 'details/:name',
         component: VillaDetailsComponent
       }
     ]

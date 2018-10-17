@@ -1,0 +1,246 @@
+main{
+  background-color: #ededed;
+}
+#company-container {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+#company-background {
+  background: url('../../../assets/images/Marrakech-Morocco_ZphqF3p@1X.png') no-repeat center center;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+#company-overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 40, 118, 0.40);
+}
+#best-offers h2{
+  position: absolute;
+  left: -25%;
+  top: 30%;
+  background-color: #282871;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  padding: 2px 25px 2px 25px;
+  margin-bottom: 0;
+}
+#best-offers p{
+  background-color: #16cce1;
+  color: white;
+  font-size: 30px;
+  padding: 2px 20px 2px 20px;
+  top: 41%;
+  left: -25%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.tabs-container {
+  position: absolute;
+  right: 4%;
+  top: 10%;
+}
+
+.tabs-container .container .row {
+  flex-direction: row-reverse;
+}
+
+.tabs {
+  background-color: white;
+  padding: 15px;
+}
+.tabs p {
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+.custom-select {
+  direction: rtl;
+}
+input{
+  text-align: right;
+}
+
+.font-weight-bold {
+  color: black;
+}
+
+.tab-content .tab-pane * {
+  transition: .3s;
+}
+
+.tabs .tab-pane {
+  margin: 20px 0;
+}
+
+.tabs a {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.tabs li {
+  background-color: transparent;
+  margin: 2px;
+  text-align: center;
+  line-height: 50px;
+  width: fit-content;
+  min-width: 90px;
+}
+
+.tabs li {
+  cursor: pointer;
+}
+
+.tabs li.active a {
+  color: #16cce1;
+}
+
+.form-control {
+  height: auto;
+}
+
+.input-group-text {
+  background-color: #282471;
+  color: #fff;
+  padding: 15px;
+  font-size: 13px;
+  position: relative;
+  width: 110px;
+  font-weight: bold;
+}
+
+input,
+select {
+  height: auto;
+  background-color: #e5e5e5;
+}
+.custom-radio label{
+  color: rgba(83, 83, 83, 255);
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before{
+  background-color: #16cce1;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after{
+  background: none;
+}
+
+.input-location button {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border-radius: 50%;
+  color: #282471;
+  z-index: 2;
+  font-size: 18px;
+  padding: 3px 10px;
+}
+
+
+button[type="submit"] {
+  width: 35%;
+  height: 45px;
+  margin: 10px 5px;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #16cce1;
+  color: white;
+}
+
+.unstyled::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+#sec-navbar{
+  background-color: #16cce1;
+  padding-bottom: 0;
+}
+#sec-navbar .navbar-nav{
+  margin-left: 25px;
+}
+#sec-navbar .navbar-toggler{
+  border:1px solid;
+}
+
+#sec-navbar .nav-item {
+  color: #fff;
+}
+
+#sec-navbar a:hover {
+  color: #fff;
+}
+
+#sec-navbar .nav-item:hover {
+  color: white;
+  border-bottom: 3px solid #282871;
+}
+
+#sec-navbar .active {
+  border-bottom: 3px solid #282871;
+  color: #ffffff;
+}
+
+#routers{
+  width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 1250px){
+  #best-offers h2{
+    left: 10%;
+    font-size: 3rem;
+  }
+  #best-offers p{
+    font-size: 20px;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 991px){
+  #company-background{
+    height: 780px;
+  }
+  #best-offers{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #company-container {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .tabs-container {
+    left: 0;
+    right: 0;
+    top: 2%;
+  }
+  button[type="submit"] {
+    width: 100%;
+  }
+  #sec-navbar .active {
+    border-left: 3px solid #282871;
+    border-bottom: none;
+    padding-left: 15px!important;
+  }
+
+
+}

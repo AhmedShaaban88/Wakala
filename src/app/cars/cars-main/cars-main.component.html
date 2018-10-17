@@ -1,0 +1,895 @@
+<div id="car-background">
+  <ul class="nav nav-tabs" id="carTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#search" role="tab" aria-controls="home" aria-selected="true">Search For a Car Rent</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#rental" role="tab" aria-controls="profile" aria-selected="false">Car Rental With Driver</a>
+    </li>
+  </ul>
+  <div class="container-fluid" id="car-select">
+
+    <div class="tab-content" id="tabs-content">
+      <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="home-tab">
+        <form class="form-inline">
+          <div class="row">
+
+            <div class="col-lg-2 col-md-12" id="select-car-word">
+              Your Rental Information
+            </div>
+            <div class="input-group col-lg-3 col-md-12">
+              <label for="city_"> Where to Pick up</label>
+              <input type="text" class="form-control" id="city_">
+            </div>
+            <div class="input-group col-lg-3 col-md-12">
+              <label for="dateFrom">Pick up Date</label>
+              <input type="text" class="form-control not-city" id="dateFrom" placeholder="03 Jul">
+              <input type="text" class="form-control no-label not-city" id="dateFrom_" placeholder="10:00 am">
+            </div>
+            <div class="input-group col-lg-3 col-md-12">
+              <label for="dateTo">Return Date</label>
+              <input type="text" class="form-control not-city" id="dateTo" placeholder="03 Jul">
+              <input type="text" class="form-control no-label not-city" id="dateTo_" placeholder="10:00 am">
+            </div>
+            <div class="col-lg-1 col-md-12">
+              <button type="submit" class="btn search-btn">Search</button>
+            </div>
+            <div class="form-check col-lg-5 col-md-12 offset-lg-1">
+              <input class="form-check-input" type="radio" id="radio-filter">
+              <label class="form-check-label" for="radio-filter">
+                Return car at different location
+              </label>
+
+            </div>
+            <div class="form-check col-lg-5 offset-lg-1 col-md-12">
+              <input class="form-check-input" type="radio" id="radio-filter2">
+              <label class="form-check-label" for="radio-filter2">
+                Driver age between 25 -  70?
+              </label>
+
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="rental" role="tabpanel" aria-labelledby="profile-tab">
+       ...
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<main class="row">
+  <div id="car-details-header" class="col-sm-12 pb-4">
+    <div class="col-sm-12" id="stepper-container">
+      <div class="container">
+        <ul class="progressbar">
+          <li class="active">Select vehical</li>
+          <li class="activeNext">Book online</li>
+          <li>Secure payment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="airplane-container" class="row pr-5 pt-3">
+
+        <div class="col-md-5 offset-md-1">
+          <div class="row airport-info">
+            <div class="col-md-7">
+        <a href="#">
+    Casblance Airport Muhammmed V (CMN)
+        </a>
+              <p class="text-right airport-info-addition">Casblance, Morocce</p>
+            </div>
+            <div class="col-md-1 marker">
+              <i class="fas fa-map-marker-alt"></i>
+
+            </div>
+            <div class="col-md-4">
+<p>October 17, 2018</p>
+              <span class="airport-info-addition">11:00, Friday</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 col-md-1 mt-3 text-center" id="map-marker">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="col-md-5">
+          <div class="row airport-info">
+            <div class="col-md-7">
+              <a href="#">
+                Casblance Airport Muhammmed V (CMN)
+              </a>
+              <p class="text-right airport-info-addition">Casblance, Morocce</p>
+            </div>
+            <div class="col-md-1 marker">
+              <i class="fas fa-map-marker-alt"></i>
+
+            </div>
+            <div class="col-md-4">
+              <p>November 2, 2018</p>
+              <span class="airport-info-addition">11:00, Friday</span>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <section class="col-md-10 offset-md-1 col-sm-12" id="car-details">
+
+    <div class="col-md-12">
+      <p id="searchFound">We found <a>111 great cars</a> for you in San Francisco, USA California</p>
+      <div class="swiper-container mb-4" id="brands-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X.png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X%20(1).png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X.png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X%20(1).png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X.png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X%20(1).png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X.png" class="brand-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../../assets/images/CARdownload@1X%20(1).png" class="brand-img">
+          </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+<div class="col-md-12">
+  <h5>BigOffers</h5>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+      <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="font-weight-bold">Small Cars</p>
+        <img src="../../../assets/images/CC.png" class="car-img-photo">
+        <p class="car-cost"> From 3452 R.S</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+  </section>
+  <div class="col-lg-3 offset-lg-1 col-md-3">
+
+    <button class="btn btn-block collapse-toggler collapsed" data-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Price per day <i class="fas fa-caret-down"></i>
+    </button>
+    <div class="clearfix"></div>
+    <ul class="list-group collapse" id="collapsePrice">
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            MARCEDIS
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Opel
+          </label>
+        </div>
+      </li>           <li class="list-group-item">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Honda
+        </label>
+      </div>
+    </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Fiat
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+    </ul>
+
+    <button class="btn btn-block collapse-toggler collapsed" data-toggle="collapse" href="#collapseSize" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Size of the car <i class="fas fa-caret-down"></i>
+    </button>
+    <div class="clearfix"></div>
+    <ul class="list-group collapse" id="collapseSize">
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            MARCEDIS
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Opel
+          </label>
+        </div>
+      </li>           <li class="list-group-item">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Honda
+        </label>
+      </div>
+    </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Fiat
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+    </ul>
+
+    <button class="btn btn-block collapse-toggler collapsed" data-toggle="collapse" href="#collapseAcc" role="button" aria-expanded="false" aria-controls="collapseExample" >
+      Car accessories <i class="fas fa-caret-down"></i>
+    </button>
+    <div class="clearfix"></div>
+    <ul class="list-group collapse" id="collapseAcc">
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            MARCEDIS
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Opel
+          </label>
+        </div>
+      </li>           <li class="list-group-item">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Honda
+        </label>
+      </div>
+    </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Fiat
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+    </ul>
+
+    <button class="btn btn-block collapse-toggler" data-toggle="collapse" href="#collapseCars" role="button" aria-expanded="false" aria-controls="collapseExample" id="collapseCarBtn">
+      Car Company <i class="fas fa-caret-down"></i>
+    </button>
+    <div class="clearfix"></div>
+    <ul class="list-group collapse show" id="collapseCars">
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            MARCEDIS
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Opel
+          </label>
+        </div>
+      </li>           <li class="list-group-item">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Honda
+        </label>
+      </div>
+    </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Fiat
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            BMW
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Economy
+          </label>
+        </div>
+      </li>
+    </ul>
+    <div id="callUs">
+      <h6>Have a question? <a href="#">Call us!</a> </h6>
+      <img src="../../../assets/images/question.png">
+      <p>+23322545445474</p>
+      <span>CallCenterWorkingHours</span><br>
+      <span>Sun-Sat: 7:00AM - 10 PM GMT</span>
+    </div>
+    <div id="room-img">
+            <span id="room-name">
+      Hotels in morocco
+    </span>
+    </div>
+
+  </div>
+  <div class="col-lg-7 col-md-9">
+    <div id="cars-container">
+      <div class="alert" role="alert">
+       <p>Prices are currently lower than usual in Abbotsford.</p>
+        <p>Don't waste this opportunity - book now and save up to 26%!</p>
+      </div>
+      <div class="row car-item">
+        <div class="col-md-4 col-sm-12">
+          <a [routerLink]="['details',carNameUrl]">{{carName}}</a>
+
+
+          <img src="../../../assets/images/Car-free-transparent-png-8@1X.png" class="car-photo">
+          <div>
+            <img src="../../../assets/images/Cars5a2ae7a9db68181c8f184d5d@1X.png" class="budget">
+          </div>
+          <div class="rating float-left">
+            <span>7.5</span>
+
+          </div>
+          <span class="ml-1">very good</span><br>
+          <span class="vote ml-1">250 vote</span>
+<div class="clearfix"></div>
+
+        </div>
+        <div class="car-features col-md-5 col-sm-12">
+          <button type="button" class="btn top-seller">
+            Top seller
+          </button>
+<div class="row mt-3">
+  <div class="col-md-6 col-sm-12">
+    <img src="../../../assets/images/C1a3-02-512@1X.png">
+    <p class="feature-item">4 Seats</p>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <img src="../../../assets/images/C296-128@1X.png">
+    <p class="feature-item">2 Small bags</p>
+  </div>
+</div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C3Layer%2010@1X.png">
+              <p class="feature-item">4 Doors</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C4Layer%2012@1X.png">
+              <p class="feature-item">automatic gearbox</p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C5Layer%2011@1X.png">
+              <p class="feature-item">Air Conditioning</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-12 booking">
+          <p>Price for 21 days<br> <span>SAR <b>1206.97</b></span></p>
+          <button class="btn condos-bg">Book</button>
+        </div>
+
+      </div>
+      <div class="row car-item">
+        <div class="col-md-4 col-sm-12">
+          <a [routerLink]="['details',carNameUrl]">{{carName}}</a>
+
+
+          <img src="../../../assets/images/Car-free-transparent-png-8@1X.png" class="car-photo">
+          <div>
+            <img src="../../../assets/images/Cars5a2ae7a9db68181c8f184d5d@1X.png" class="budget">
+          </div>
+          <div class="rating float-left">
+            <span>7.5</span>
+
+          </div>
+          <span class="ml-1">very good</span><br>
+          <span class="vote ml-1">250 vote</span>
+          <div class="clearfix"></div>
+
+        </div>
+        <div class="car-features col-md-5 col-sm-12">
+          <button type="button" class="btn top-seller">
+            Top seller
+          </button>
+          <div class="row mt-3">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C1a3-02-512@1X.png">
+              <p class="feature-item">4 Seats</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C296-128@1X.png">
+              <p class="feature-item">2 Small bags</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C3Layer%2010@1X.png">
+              <p class="feature-item">4 Doors</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C4Layer%2012@1X.png">
+              <p class="feature-item">automatic gearbox</p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C5Layer%2011@1X.png">
+              <p class="feature-item">Air Conditioning</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-12 booking">
+          <p>Price for 21 days<br> <span>SAR <b>1206.97</b></span></p>
+          <button class="btn condos-bg">Book</button>
+        </div>
+
+      </div>
+      <div class="row car-item">
+        <div class="col-md-4 col-sm-12">
+          <a [routerLink]="['details',carNameUrl]">{{carName}}</a>
+
+
+          <img src="../../../assets/images/Car-free-transparent-png-8@1X.png" class="car-photo">
+          <div>
+            <img src="../../../assets/images/Cars5a2ae7a9db68181c8f184d5d@1X.png" class="budget">
+          </div>
+          <div class="rating float-left">
+            <span>7.5</span>
+
+          </div>
+          <span class="ml-1">very good</span><br>
+          <span class="vote ml-1">250 vote</span>
+          <div class="clearfix"></div>
+
+        </div>
+        <div class="car-features col-md-5 col-sm-12">
+          <button type="button" class="btn top-seller">
+            Top seller
+          </button>
+          <div class="row mt-3">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C1a3-02-512@1X.png">
+              <p class="feature-item">4 Seats</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C296-128@1X.png">
+              <p class="feature-item">2 Small bags</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C3Layer%2010@1X.png">
+              <p class="feature-item">4 Doors</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C4Layer%2012@1X.png">
+              <p class="feature-item">automatic gearbox</p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C5Layer%2011@1X.png">
+              <p class="feature-item">Air Conditioning</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-12 booking">
+          <p>Price for 21 days<br> <span>SAR <b>1206.97</b></span></p>
+          <button class="btn condos-bg">Book</button>
+        </div>
+
+      </div>
+      <div class="row car-item">
+        <div class="col-md-4 col-sm-12">
+          <a [routerLink]="['details',carNameUrl]">{{carName}}</a>
+
+
+          <img src="../../../assets/images/Car-free-transparent-png-8@1X.png" class="car-photo">
+          <div>
+            <img src="../../../assets/images/Cars5a2ae7a9db68181c8f184d5d@1X.png" class="budget">
+          </div>
+          <div class="rating float-left">
+            <span>7.5</span>
+
+          </div>
+          <span class="ml-1">very good</span><br>
+          <span class="vote ml-1">250 vote</span>
+          <div class="clearfix"></div>
+
+        </div>
+        <div class="car-features col-md-5 col-sm-12">
+          <button type="button" class="btn top-seller">
+            Top seller
+          </button>
+          <div class="row mt-3">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C1a3-02-512@1X.png">
+              <p class="feature-item">4 Seats</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C296-128@1X.png">
+              <p class="feature-item">2 Small bags</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C3Layer%2010@1X.png">
+              <p class="feature-item">4 Doors</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C4Layer%2012@1X.png">
+              <p class="feature-item">automatic gearbox</p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img src="../../../assets/images/C5Layer%2011@1X.png">
+              <p class="feature-item">Air Conditioning</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-12 booking">
+          <p>Price for 21 days<br> <span>SAR <b>1206.97</b></span></p>
+          <button class="btn condos-bg">Book</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+

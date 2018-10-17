@@ -1,0 +1,580 @@
+#car-background{
+  background: url("../../../assets/images/CARthumb-1920-658896@1X.png") no-repeat center center ;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+#car-select {
+  background-color: #16cce1;
+  height: auto;
+  padding: 0 150px !important;
+  position: relative;
+  top: 28.5rem;
+}
+.nav-tabs{
+  position: absolute;
+  background-color: transparent;
+  top: 26.3rem;
+  left: 140px;
+}
+.nav-tabs .nav-item{
+  background-color: #252471;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border: 0;
+}
+.nav-item{
+  margin-left: 10px;
+}
+.nav-item a{
+  color: white;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #16cce1;
+  color: #252471;
+  border:0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.form-check{
+  margin-left: 7.3333%!important;
+}
+#tabs-content{
+  padding-bottom: 20px;
+}
+
+#car-select .form-control {
+  border-radius: 0;
+}
+
+#car-select form .row {
+  margin-top: 30px;
+}
+
+.input-group,
+.input-group label {
+  display: block;
+}
+
+#car-select #select-car-word {
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 0;
+  font-weight: 700;
+}
+
+#car-select .col-lg-3 #city_ {
+  width: 100%;
+}
+
+#car-select .col-lg-3 .not-city {
+  width: 46%;
+}
+
+.row .no-label {
+  margin-left: 10px;
+}
+
+form .search-btn {
+  border-color: #282871;
+  background-color: #282871;
+  color: white;
+  height: 40px;
+  width: 140px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  margin-top: 22px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form .form-check {
+  padding-right: 0;
+  padding-top: 10px;
+}
+
+#car-details-header{
+  background-color: #f7f8f88f;
+  padding-top: 2rem;
+}
+#stepper-container .container {
+  width:100%;
+}
+.progressbar li{
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position:relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.progressbar li:before {
+  /* CSS for creating steper block before the li item*/
+  content:'';
+  height:20px;
+  width:20px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  display:block;
+  text-align: center;
+  margin: 7px auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  /* CSS for creating horizontal line*/
+  content:'';
+  position: absolute;
+  width:100%;
+  height:2px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content:none;
+}
+.progressbar li.active {
+  color:#357d9e;
+}
+.progressbar li.active:before {
+  border-color:#27ae60;
+  background-color: #27ae60;
+}
+.progressbar li.active + li:after{
+  background-color:#27ae60;
+}
+.progressbar li.activeNext:before{
+  border-color: #27ae60;;
+}
+.airport-info{
+  background-color: white;
+  box-shadow: 2px 4px 6px 3px #9e9e9e61;
+  padding: 10px;
+  border-left: 6px solid #35789f;
+}
+.airport-info a{
+  border-bottom: 1px dashed ;
+}
+.airport-info p{
+  margin-bottom: 0;
+}
+.airport-info .airport-info-addition{
+  font-size: 14px;
+  color: #545252;
+}
+.airport-info .fa-map-marker-alt{
+  color: #545252;
+  padding-top: 10px;
+}
+#car-details-header #map-marker{
+  font-size: 30px;
+}
+
+
+#car-details #searchFound a {
+  color: #535288;
+}
+#searchFound{
+  font-size: 19px;
+}
+#brands-slider{
+  height:100px;
+}
+.swiper-container {
+  width: 100%;
+  padding: 15px;
+  height: auto;
+  border: 1px solid rgba(0,0,0, 0.10);
+}
+.swiper-container-android .swiper-slide, .swiper-wrapper{
+  text-align: center;
+}
+.car-cost{
+  color: #9E9E9E;
+}
+.collapse-toggler {
+  background-color: #16cce1;
+  color: white;
+  border-radius: 0;
+  margin-bottom: 4px;
+  border: 0;
+  font-weight: bold;
+  text-align: start;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.collapse-toggler:focus {
+  box-shadow: 0 0;
+}
+.collapsed{
+  background-color: #252471!important;
+}
+
+.list-group-item {
+  background-color: #e4f1f2!important;
+  padding: 20px 20px;
+  border-radius: 0;
+}
+.collapse-toggler .fa-caret-down {
+  display: block;
+  float: right;
+}
+#cars-container .trip-item {
+  border: 1px solid #dedede;
+  padding: 15px 35px;
+}
+
+
+#callUs {
+  background-color: #16cce1;
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  transition: transform 0.3s linear;
+}
+
+#callUs:hover img {
+  transform: scale(1.2) rotate(100deg);
+}
+
+#callUs img {
+  width: 60px;
+}
+
+#callUs p {
+  color: black;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#callUs a {
+  color: white;
+}
+
+#room-img {
+  background: url("../../../assets/images/Hotel_city_habitacion_matrimonio_03@1X.png")no-repeat center center;
+  background-size: cover;
+  height: 260px;
+  position: relative;
+}
+
+#room-name {
+  position: absolute;
+  right: 0px;
+  background-color: #16cce1;
+  bottom: 0;
+  height: 60px;
+  width: 87%;
+  text-align: right;
+  color: #202671;
+  font-size: 21px;
+  padding: 8px;
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.alert{
+  background-color: #dff2f5;
+  border-left: 5px solid #16cce1;
+}
+.alert p{
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+
+.car-item {
+  padding-right: 15px;
+  margin-bottom: 2%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#cars-container .car-item {
+  border: 1px solid #eeeeee;
+}
+.car-item .top-seller{
+  margin-left: 9rem;
+  background-color: #202671;
+  color: white;
+  border-radius: 7px;
+  margin-top: 4%;
+  margin-bottom: 10px;
+}
+#cars-container .car-item .car-photo{
+  margin-top: 5%;
+  display: block;
+  margin-bottom: 15px;
+}
+#cars-container .car-item a {
+  font-size: 1.7rem;
+  color: #232571;
+  display: inline-block;
+  padding-top: 2%;
+}
+.rating {
+  width: 40px;
+  height: 40px;
+  background-color: #16cce1;
+  border-radius: 50%;
+  color: black;
+}
+.rating span{
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  line-height: 42px;
+}
+.car-features{
+  text-align: center;
+}
+.car-features .feature-item{
+  color: #202871;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.budget{
+  vertical-align: super!important;
+}
+.vote{
+  color: #0c94a4;
+}
+
+.booking {
+  background-color: #e2f1f4;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.booking button {
+  margin-top: 20%;
+  color: white;
+  width: 9rem;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.booking p {
+  margin-top: 60%;
+  font-size: 15px;
+}
+
+.booking span {
+  font-size: 25px;
+}
+.booking .condos-bg{
+  background-color: #202671;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 993px) {
+  #car-select {
+    top: 26.5rem;
+  }
+  .nav-tabs{
+    top: 24.3rem;
+  }
+  .airport-info{
+    font-size: 13px;
+  }
+  .airport-info-addition{
+    font-size: 12px!important;
+  }
+  .form-check {
+    padding-right: 15px;
+    margin-bottom: 2%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .top-seller{
+    margin-left: 7rem!important;
+  }
+  .booking button{
+    width: 7rem;
+  }
+  #cars-container .car-item a{
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 992px){
+  .marker{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #car-background{
+    height: 300px;
+  }
+  #car-select{
+  top:12.5rem;
+  }
+  .nav-tabs{
+    top: 10.3rem;
+  }
+  #car-details-header{
+    margin-top: 19rem;
+  }
+  .top-seller{
+    margin-left: 6rem!important;
+  }
+  .booking span{
+    font-size: 20px;
+  }
+  .booking button{
+    width: 6rem;
+    margin-top: 80%;
+  }
+  #callUs {
+    font-size: 17px;
+  }
+  #callUs p {
+    font-size: 19px;
+  }
+  #callUs span {
+    font-size: 14px;
+  }
+  #room-name {
+    font-size: 19px;
+  }
+  #car-select {
+    height: auto;
+  }
+  #car-select form .row {
+    margin-top: 0;
+  }
+  #select-car-word {
+    text-align: center;
+  }
+  #car-select .col-lg-3 .not-city {
+    width: 50%;
+  }
+  .row .no-label {
+    margin-left: 0!important;
+  }
+  #car-select .col-lg-1 {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .car-img-photo{
+    width: 80px;
+  }
+  .form-check{
+    margin-left: 0!important;
+  }
+  #cars-container .car-item a{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .input-group {
+    width: 100% !important;
+  }
+  #car-background{
+    height: auto;
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+  #car-select{
+    top:12.5rem;
+  }
+  .nav-tabs{
+    top: 10.3rem;
+    left: 0;
+  }
+  .nav-link{
+    padding: 0.5rem 0;
+  }
+  #car-details-header{
+    margin-top: 12.5rem;
+  }
+  #car-select form .row {
+    margin-top: 0;
+  }
+  #select-car-word {
+    text-align: center;
+    margin-top: 0!important;
+  }
+  #car-select .col-lg-3 .not-city {
+    width: 100%;
+  }
+  #car-select{
+    padding: 15px!important;
+  }
+  .alert{
+    margin-top: 20px;
+    font-size: 11px;
+  }
+  #car-select .col-lg-1 {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .car-item .car-photo{
+    margin: 5% auto 15px
+  }
+  #airplane-container{
+    text-align: center;
+    padding-right: 20px!important;
+    padding-left: 5px;
+  }
+  .rating{
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+  .booking p{
+    margin-top: 2%;
+  }
+  .booking button{
+    width: 90%;
+    margin-top: 8%;
+  }
+  .row .no-label {
+    margin-left: 0!important;
+  }
+  .car-item{
+    text-align: center;
+  }
+  .top-seller{
+    display: none;
+  }
+  .car-img-photo, .brand-img{
+    width: 65px;
+  }
+  #map-marker{
+    visibility: hidden;
+  }
+  .form-check{
+    margin-left: 4%!important;
+  }
+  #stepper-container{
+    padding-left: 0;
+  }
+  #stepper-container .container{
+    padding-right: 18px;
+    padding-left: 0px;
+  }
+  #cars-container .car-item a{
+    font-size: 1.3rem;
+  }
+}

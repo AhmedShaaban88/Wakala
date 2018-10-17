@@ -9,6 +9,14 @@
     background-size: cover;
     position: relative;
 }
+#flying-airplane-overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 40, 118, 0.18);
+}
 
 .tabs-container {
     position: absolute;
