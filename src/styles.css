@@ -113,6 +113,9 @@ a:hover {
 section {
     padding: 40px 0;
 }
+.badges{
+  cursor: default!important;
+}
 
 .rounded-formcontrol {
     border-radius: 1.25rem!important;

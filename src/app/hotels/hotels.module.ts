@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HotelHomeComponent } from './hotel-home/hotel-home.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { HotelsRoutingModule } from './hotels-routing.module';
+import { HotelHomeComponent } from './hotel-home/hotel-home.component';
+import { HotelMainComponent } from './hotel-main/hotel-main.component';
 
 
 @NgModule({
@@ -11,6 +12,6 @@ import { HotelsRoutingModule } from './hotels-routing.module';
     HotelsRoutingModule,
     InViewportModule
   ],
-  declarations: [HotelHomeComponent]
+  declarations: [HotelHomeComponent, HotelMainComponent]
 })
 export class HotelsModule { }

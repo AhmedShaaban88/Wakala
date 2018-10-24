@@ -13,6 +13,7 @@
   text-align: center;
   font-weight: 600;
   font-size: 14px;
+  cursor: pointer;
 }
 .progressbar li:before {
   /* CSS for creating steper block before the li item*/
@@ -263,6 +264,10 @@
   color: white;
   font-size: 22px;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+.next-step-btn:hover{
+  box-shadow: 1px 0px 6px 0px #a5a5a5;
 }
 
 

@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
   zoom = 10;
   lat = 51.673858;
   lng = 7.815982;
-  mapId: string;
   constructor() {}
   ngOnInit() {
     $('.tabs li a')[4].click();
@@ -29,7 +28,6 @@ export class HomeComponent implements OnInit {
           this.lng = position.coords.longitude;
         }));
     }
-    this.mapId = 'fankoo';
   }
   activeTab(index: number) {
     $('.tabs li').removeClass('active');
@@ -40,8 +38,5 @@ export class HomeComponent implements OnInit {
   mapInfo(event: MouseEvent) {
     this.lat = event.coords.lat;
     this.lng = event.coords.lng;
-  }
-  print(val){
-    console.log(val)
   }
 }

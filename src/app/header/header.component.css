@@ -176,14 +176,8 @@ nav .nav-item {
 }
 
 @media screen and (max-width: 905px) and (min-width: 768px) {
-    .navbar button {
-        display: block;
-    }
-    .navbar-nav {
-        visibility: hidden;
-    }
-    .hide-mid {
-        display: none;
+  .hide-mid{
+      display: none;
     }
 }
 
